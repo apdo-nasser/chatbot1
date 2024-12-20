@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Test</title>
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <h1>Chatbot Library Test Page</h1>
+  <p>Type your API key in the chatbot initialization code to test.</p>
+
+  <script src="chatbot.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        // Initialize chatbot with your API key
+        const chatbot = new ChatBot('YOUR_API_KEY');
+        chatbot.init(); // Initialize the chat UI
+      } catch (error) {
+        console.error('Chatbot initialization failed:', error);
+      }
+    });
+  </script>
+</body>
+</html>
